@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #6f74f3 30%, #1d932b 70%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(1);
+    }
+}
+
+span {
+    background-color: #FFF;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    text-align: center;
+    animation-name: appear;
+    transition: all 1s;
+    display: none;
+}
+
+#vowels {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#display {
+    font-size: 20px;
+}
+
+.container {
+    background-color: #FFF;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    height: 15rem;
+    width: 20rem;
+    transition: all 1s;
+    transform: translateY(0);
+}
+
+.container .input-div {
+    margin: auto;
+    width: 100%;
+}
+
+.container .input-div label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .input-div input {
+    font-size: 18px;
+    outline: none;
+    padding: 5px;
+    border: 2px solid rgb(110, 108, 108);
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.container .input-div input:focus {
+    border: 2px solid rgb(0, 255, 4);
+    color: #df1010fd;
+    border-radius: 5px;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid rgb(254, 252, 252);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(10, 10, 10);
+    background-color: darkorchid;
+    color: rgb(249, 248, 248);
+}

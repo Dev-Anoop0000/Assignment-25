@@ -1,0 +1,197 @@
+ /* -------- Google font ------------  */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ header {
+     text-align: center;
+     padding: 5px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 30px;
+     font-weight: 800;
+     background-color: rgb(13, 196, 242);
+     color: #ffffff;
+     box-shadow: 0px 5px 5px gray;
+     margin-bottom: 0.5rem;
+ }
+ 
+ marquee {
+     background-color: rgb(242, 239, 239);
+     padding: 5px;
+ }
+ 
+ #up .detail {
+     padding: 10px;
+     background-color: #d6d6d6;
+     font-size: 22px;
+ }
+ 
+ #down {
+     background-color: rgb(240, 238, 238);
+     padding: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ 
+ button {
+     padding: 5px 15px;
+     border: 0;
+     border-radius: 10px;
+     font-size: 18px;
+     font-family: 'Poppins', sans-serif;
+     background-color: rgba(30, 87, 246, 0.802);
+     color: #ffffff;
+     box-shadow: 0px 0px 5px #848484;
+ }
+ 
+ #container {
+     width: 100vw;
+ }
+ 
+ .card {
+     background-color: blueviolet;
+     padding: 20px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     transform: translateY(0);
+     transition: all 0.5s ease-in-out;
+ }
+ 
+ #deposit {
+     background-color: hsl(130, 86%, 61%);
+ }
+ 
+ #amnt-div,
+ #pswrd-div {
+     width: 60%;
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+     margin-bottom: 1rem;
+ }
+ 
+ label {
+     font-size: 23px;
+ }
+ 
+ input {
+     outline: none;
+     border: 0;
+     padding: 2px 5px;
+     border-radius: 5px;
+     font-weight: 600;
+     letter-spacing: 2px;
+ }
+ 
+ .card #authenticate-div {
+     background-color: rgb(202, 255, 127);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 10px;
+     font-size: 20px;
+ }
+ 
+ .card #authenticate-div #message {
+     visibility: hidden;
+     color: red;
+ }
+ 
+ .card #authenticate-div #authentication {
+     width: 180px;
+     height: 45px;
+ }
+ 
+ #withdrawal #authenticate-div {
+     background-color: #ffffff;
+ }
+ 
+ #withdrawal #authenticate-div #authentication {
+     background-color: hsl(130, 86%, 61%);
+     color: #ffffff;
+ }
+ 
+ #withdrawal #authenticate-div #authentication:hover {
+     background-color: hsl(138, 83%, 23%);
+     color: #ffffff;
+     border: 2px solid #ffffff;
+ }
+ 
+ #deposit #authenticate-div #authentication {
+     background-color: #FF5964;
+     color: #ffffff;
+ }
+ 
+ #deposit #authenticate-div #authentication:hover {
+     background-color: #cd4d55;
+     color: #ffffff;
+     border: 2px solid #ffffff;
+ }
+ 
+ .history {
+     background-color: rgb(156, 254, 251);
+     width: 100%;
+     height: auto;
+ }
+ 
+ .history ul li {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+ }
+ 
+ .history ul li p {
+     width: 25%;
+     font-size: 20px;
+     font-weight: 500;
+     padding: 5px 0;
+     background-color: rgb(124, 11, 246);
+     color: #ffffff;
+     border: 1px solid #000000;
+     text-align: center;
+     margin-bottom: 1rem;
+ }
+ 
+ .history ul li span {
+     text-align: center;
+     width: 25%;
+     padding: 5px;
+     border: 0;
+     border-left: 1px;
+     border-style: solid;
+     border-color: black;
+ }
+ 
+ .history ul li span:last-child {
+     border: 0;
+     border-left: 1px;
+     border-right: 1px;
+     border-style: solid;
+     border-color: black;
+ }
+ 
+ .history ul li {
+     background-color: #ffffff;
+     border: 0;
+     border-top: 1px solid #000000;
+ }
+ 
+ .history ul li:last-child {
+     border-bottom: 1px;
+     border-style: solid;
+     border-color: black;
+ }
+ 
+ .history ul li:nth-child(even) {
+     background-color: #f2f1f1;
+ }

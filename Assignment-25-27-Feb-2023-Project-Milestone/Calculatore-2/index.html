@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- ---------- External Css ----------  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <div class="input-div">
+
+            <input type="number" placeholder="Number-1" id="num-1">
+            <div id="oper-div">
+                <input type="text" id="operator">
+                <p id="result">&#8592 Input Operator</p>
+            </div>
+            <input type="number" placeholder="Number-2" id="num-2">
+            <div class="operation">
+                <span id="add" onclick="add()">+</span>
+                <span id="minus" onclick="sub()">-</span>
+                <span id="product" onclick="multi()">*</span>
+                <span id="devide" onclick="div()">/</span>
+            </div>
+            <button type="submit" id="equal" onclick="calculate()">=</button>
+
+        </div>
+    </div>
+
+    <!-- --------- Script  ----------  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

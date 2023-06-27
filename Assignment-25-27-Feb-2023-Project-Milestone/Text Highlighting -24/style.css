@@ -1,0 +1,36 @@
+body {
+    background-color: #EC058E;
+}
+
+h1 {
+    text-align: center;
+    font: size 40px;
+    text-decoration: underline;
+}
+
+div {
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 2rem;
+    text-decoration: underline dotted rgb(7, 7, 7);
+}
+
+p {
+    text-align: justify;
+    color: hsl(0, 0%, 0%);
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 1px 5px;
+}

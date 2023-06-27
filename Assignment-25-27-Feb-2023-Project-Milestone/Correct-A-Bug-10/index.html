@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How correct a bug</title>
+    <!-- ------- CSS ---------  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ------------ Font Awesome -------  -->
+    <script src="https://kit.fontawesome.com/f411cf2024.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/OIP.WyoNuJYyf5Vl96UaA2LfpwHaHx?pid=ImgDet&rs=1" alt="logo">
+        <div id="search-box">
+            <input type="search" id="search">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+        </div>
+
+        <div id="div-btn">
+            <div id="cart-div" for="cart">
+                <a href="#" id="cart"></a>
+            </div>
+            <button id="order">Order</button>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="menu">
+            <input type="checkbox" id="check" style="display: none;">
+            <label for="check" id="check-btn">
+                <i class="fa-solid fa-bars" id="menu-btn"></i>
+                <i class="fa-solid fa-xmark" id="cancel-btn"></i>
+            </label>
+            <ul>
+                <li>Menu Anoop</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="item" value="item-1">
+                <h1>Item-1</h1>
+                <button class="add" onclick="addToCart(item1)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-2</h1>
+                <button class="add" onclick="addToCart(item2)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-3</h1>
+                <button class="add" onclick="addToCart(item3)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-4</h1>
+                <button class="add" onclick="addToCart(item4)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-5</h1>
+                <button class="add" onclick="addToCart(item5)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-6</h1>
+                <button class="add" onclick="addToCart(item6)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-7</h1>
+                <button class="add" onclick="addToCart(item7)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-8</h1>
+                <button class="add" onclick="addToCart(item8)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-9</h1>
+                <button class="add" onclick="addToCart(item9)">Add to cart</button>
+            </div>
+            <div class="item">
+                <h1>Item-10</h1>
+                <button class="add" onclick="addToCart(item10)">Add to cart</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Cart item display -->
+    <div id="item-display">
+        hello
+    </div>
+    <!-- --------- SCRIPT --------  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

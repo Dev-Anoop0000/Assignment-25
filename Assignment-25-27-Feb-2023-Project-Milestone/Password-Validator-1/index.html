@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validator</title>
+    <!-- ------- Style Sheet ----------  -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://th.bing.com/th/id/OIP.Y4hPsxCDBaoIJFYJRv6BxgHaHa?pid=ImgDet&rs=1"
+        alt="Logo"
+        width="50px"
+        id="logo" />
+      
+      <div id="print"></div>
+      <form action="##" id="form">
+        <div class="input-row" id="name">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Name" />
+        </div>
+
+        <div class="input-row" id="password">
+          <label for="Password">Password</label>
+          <input
+            type="password"
+            placeholder="Password"
+            id="pass-1"
+            onkeyup="return validate()" />
+        </div>
+
+        <div class="input-row" id="confirm-p">
+          <label for="confirm">Confirm Password</label>
+          <input type="password" placeholder="Confirm password" id="pass-2" />
+        </div>
+
+        <div class="error">
+          <ul>
+            <li id="upper">Atleast one uppercase</li>
+            <li id="lower">Atleast one lowercase</li>
+            <li id="special_char">Atleast one special symbol</li>
+            <li id="number">Atleast one number</li>
+            <li id="length">Atleast 6 characters</li>
+          </ul>
+        </div>
+        <button type="submit" id="login">Login</button>
+      </form>
+    </div>
+
+    <!-- ---------- script ----------  -->
+    <script src="./script.js"></script>
+  </body>
+</html>

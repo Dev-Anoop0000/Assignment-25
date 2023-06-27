@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #6c33a3;
+    background-image: linear-gradient(316deg, #6c33a3 0%, #8241b8 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    min-height: 200px;
+    max-height: auto;
+    background-color: #ffffff;
+    padding: 10px 15px;
+}
+
+.inputBox {
+    margin-top: 10px;
+    /* background-color: #8241b8; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 89%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#plus-btn {
+    width: 10%;
+    height: 100%;
+    font-size: 25px;
+    padding: 3px 8px;
+    box-shadow: 0px 0px 2px #000000;
+    background-color: hsl(138, 100%, 50%);
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-top: 5px;
+    background-color: #edebeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+ul li:nth-child(even) {
+    background-color: #f6ecec;
+}
+
+ul li .text {
+    background-color: none;
+    color: #686767;
+    font-size: 18px;
+    display: block;
+    align-items: center;
+    width: 80%;
+    min-height: 31px;
+    transition: all 0.5s;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    transform: scale(0.9);
+    transition: all 0.4s;
+}
+
+ul li .text:hover {
+    color: #000000;
+    font-size: 20px;
+    transform: scale(1);
+}
+
+ul li .btn {
+    display: block;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+ul li .btn .edit,
+.delete {
+    background-color: #ccc6c6;
+    box-shadow: 0px 0px 2px #515151;
+    border: 0;
+    outline: none;
+    padding: 5px 7px;
+    font-size: 20px;
+    border-radius: 2px;
+    color: #948e8e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+ul li .btn .edit:hover,
+.delete:hover {
+    background-color: #ffffff;
+    color: #100f0f;
+}
